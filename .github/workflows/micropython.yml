@@ -14,24 +14,24 @@ env:
 jobs:
   build:
     name: ${{ matrix.name }} (${{ matrix.board }})
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     continue-on-error: true
     strategy:
       matrix:
         include:
-        - name: pico2_rp2350
-          board: RPI_PICO2
+        #- name: pico2_rp2350
+        #  board: RPI_PICO2
         - name: pico2b_rp2350
           board: RPI_PICO2B
-        - name: plasma2350
-          board: PIMORONI_PLASMA2350
-        - name: tiny2350
-          board: PIMORONI_TINY2350
-        - name: pico_plus2_rp2350_psram
-          board: PIMORONI_PICO_PLUS2
-          variant: PSRAM
-        - name: pico_plus2_rp2350
-          board: PIMORONI_PICO_PLUS2
+        #- name: plasma2350
+        #  board: PIMORONI_PLASMA2350
+        #- name: tiny2350
+        #  board: PIMORONI_TINY2350
+        #- name: pico_plus2_rp2350_psram
+        #  board: PIMORONI_PICO_PLUS2
+        #  variant: PSRAM
+        #- name: pico_plus2_rp2350
+        #  board: PIMORONI_PICO_PLUS2
 
     env:
       # MicroPython version will be contained in github.event.release.tag_name for releases
