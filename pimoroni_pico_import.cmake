@@ -21,7 +21,8 @@ if (NOT PIMORONI_PICO_PATH)
         FetchContent_Declare(
                 pimoroni_pico
                 GIT_REPOSITORY https://github.com/pimoroni/pimoroni-pico
-                GIT_TAG main
+                GIT_TAG test-i75-128x128
+                # GIT_TAG main
         )
         if (NOT pimoroni_pico)
             message("Downloading PIMORONI_PICO SDK")
