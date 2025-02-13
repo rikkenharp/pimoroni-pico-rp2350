@@ -19,8 +19,8 @@ jobs:
     strategy:
       matrix:
         include:
-        #- name: pico2_rp2350
-        #  board: RPI_PICO2
+        - name: pico2_rp2350
+          board: RPI_PICO2
         - name: pico2b_rp2350
           board: RPI_PICO2B
         #- name: plasma2350
