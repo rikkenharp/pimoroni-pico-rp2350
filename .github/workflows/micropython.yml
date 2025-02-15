@@ -122,17 +122,6 @@ jobs:
       with:
         name: ${{ env.RELEASE_FILE }}.uf2
         path: build-${{ matrix.name }}/${{ env.RELEASE_FILE }}.uf2
-
-    //- name: Upload .uf2
-    //  if: github.event_name == 'release'
-    //  uses: actions/upload-release-asset@v1
-    // env:
-    //   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    //  with:
-    //    asset_path: build-${{ matrix.name }}/firmware.uf2
-    //    upload_url: ${{ github.event.release.upload_url }}
-    //    asset_name: ${{ env.RELEASE_FILE }}.uf2
-    //    asset_content_type: application/octet-stream
         
     - name: Upload .uf2
       if: github.event_name == 'release'
