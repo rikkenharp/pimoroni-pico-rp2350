@@ -15,7 +15,7 @@ with:
 
 name: Setup pnpm store config
 run: pnpm config set store-dir $PNPM_CACHE_FOLDER
-
+name: MicroPython
 on:
   push:
   pull_request:
