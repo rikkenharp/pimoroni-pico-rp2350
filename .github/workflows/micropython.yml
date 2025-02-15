@@ -47,12 +47,11 @@ jobs:
       BUILD_TOOLS: pimoroni-pico-rp2350-${{ github.sha }}/ci/micropython.sh
 
     steps:
-    - name: Compiler Cache
+    - name: Compiler Cache FIX
       run: |
         mkdir -p /home/runner/.ccache
 
-
-    
+    - name: Compiler Cache   
       uses: actions/cache@v4
       with:
         path: /home/runner/.ccache
