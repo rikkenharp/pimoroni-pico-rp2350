@@ -1,12 +1,3 @@
-name: Verify PNPM Cache Directory
-        run: MicroPython
-          if [ ! -d ""$PNPM_CACHE_FOLDER/store/v3"" ]; then
-            echo ""PNPM cache directory does not exist, creating it.""
-            mkdir -p ""$PNPM_CACHE_FOLDER/store/v3""
-          else
-            echo ""PNPM cache directory exists.""
-          fi
-
 name: MicroPython
 
 on:
